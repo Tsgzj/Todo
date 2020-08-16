@@ -60,13 +60,12 @@ export default function TodoList() {
         estimated: 4, priority: '2', created: '2020-08-15 19:30', completed: false },
       { title: 'Use detail panel instead of detail view?', project: 'Todo List',  context: 'Coding',
         estimated: 2, priority: '2', created: '2020-08-16', completed: false },
-
     ],
   });
 
   return (
       <MaterialTable
-    title="Editable Example"
+    title="Todo"
     columns={state.columns}
     data={state.data}
     actions={[
