@@ -21,6 +21,7 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems } from './../components/drawerItems';
 import Chart from './../components/Chart';
 import Deposits from './../components/Deposits';
+import TodoList from './../components/TodoList';
 
 function Copyright() {
   return (
@@ -116,9 +117,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function index() {
+export default function list() {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(true);
   const handleDrawerOpen = () => {
     setOpen(true);
   };
@@ -144,11 +145,6 @@ export default function index() {
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
             Dashboard
           </Typography>
-          <IconButton color="inherit">
-            <Badge badgeContent={4} color="secondary">
-              <NotificationsIcon />
-            </Badge>
-          </IconButton>
         </Toolbar>
       </AppBar>
       <Drawer
@@ -170,16 +166,9 @@ export default function index() {
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
-            {/* Chart */}
-            <Grid item xs={12} md={8} lg={9}>
-              <Paper className={fixedHeightPaper}>
-                <Chart />
-              </Paper>
-            </Grid>
-            {/* Recent Deposits */}
-            <Grid item xs={12} md={4} lg={3}>
-              <Paper className={fixedHeightPaper}>
-                <Deposits />
+            <Grid item xs={12}>
+              <Paper className={classes.paper}>
+                <TodoList />
               </Paper>
             </Grid>
           </Grid>
