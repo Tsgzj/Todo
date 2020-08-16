@@ -8,18 +8,30 @@ import DashboardIcon from '@material-ui/icons/Dashboard';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 
 export const mainListItems = (
-  <div>
+    <div>
     <ListItem button component='a' href="/">
-      <ListItemIcon>
-        <DashboardIcon />
-      </ListItemIcon>
-      <ListItemText primary="Dashboard" />
+    <ListItemIcon>
+    <DashboardIcon />
+    </ListItemIcon>
+    <ListItemText primary="Dashboard" />
     </ListItem>
     <ListItem button component='a' href="/list">
-      <ListItemIcon>
-        <ListIcon />
-      </ListItemIcon>
-      <ListItemText primary="Todo List" />
+    <ListItemIcon>
+    <ListIcon />
+    </ListItemIcon>
+    <ListItemText primary="Todo List" />
     </ListItem>
-  </div>
+    <ListItem button >
+    <ListItemIcon>
+    <ListIcon />
+    </ListItemIcon>
+    <ListItemText primary="Perspectives" />
+    </ListItem>
+    <ListItem button>
+    <ListItemIcon>
+    <ListIcon />
+    </ListItemIcon>
+    <ListItemText primary="About" />
+    </ListItem>
+    </div>
 );
