@@ -46,20 +46,20 @@ export default function TodoList() {
       { title: 'Context', field: 'context' },
       { title: 'Estimated', field: 'estimated', type: 'numeric' },
       { title: 'Priority', field: 'priority' },
-      { title: 'Created', field: 'created', type: 'datetime' }
+      { title: 'Created', field: 'created', type: 'datetime' },
       { title: 'Completed', field: 'completed', type: 'boolean' }
     ],
     data: [
       { title: 'Complete detail view', project: 'Todo List',  context: 'Coding',
-        Estimated: '2', priority: '1', created: '', completed: false },
+        estimated: 2, priority: '1', created: '2020-08-16 14:00', completed: false },
       { title: 'Modify dashboard charts', project: 'Todo List',  context: 'Research',
-        Estimated: '3', priority: '1', created: '', completed: false },
+        estimated: 3, priority: '1', created: '2020-08-16 12:00', completed: false },
       { title: 'Extract components', project: 'Todo List',  context: 'Refactor',
-        Estimated: '1', priority: '3', created: '', completed: true },
+        estimated: 1, priority: '3', created: '2020-08-16 10:00', completed: true },
       { title: 'Fix emacs debugging tool', project: 'Dev Tool',  context: 'Research',
-        Estimated: '3', priority: '2', created: '', completed: false },
+        estimated: 4, priority: '2', created: '2020-08-15 19:30', completed: false },
       { title: 'Use detail panel instead of detail view?', project: 'Todo List',  context: 'Coding',
-        Estimated: '2', priority: '2', created: '', completed: false },
+        estimated: 2, priority: '2', created: '2020-08-16', completed: false },
 
     ],
   });
