@@ -41,18 +41,26 @@ const tableIcons = {
 export default function TodoList() {
   const [state, setState] = React.useState({
     columns: [
-      { title: 'Name', field: 'name' },
-      { title: 'Surname', field: 'surname' },
-      { title: 'Birth Year', field: 'birthYear', type: 'numeric' },
-      {
-        title: 'Birth Place',
-        field: 'birthCity',
-        lookup: { 34: 'İstanbul', 63: 'Şanlıurfa' },
-      },
+      { title: 'Title', field: 'title' },
+      { title: 'Project', field: 'project' },
+      { title: 'Context', field: 'context' },
+      { title: 'Estimated', field: 'estimated', type: 'numeric' },
+      { title: 'Priority', field: 'priority' },
+      { title: 'Created', field: 'created', type: 'datetime' }
+      { title: 'Completed', field: 'completed', type: 'boolean' }
     ],
     data: [
-      { name: 'Mehmet', surname: 'Baran', birthYear: 1987, birthCity: 63 },
-      { name: 'Zerya Betül', surname: 'Baran', birthYear: 2017, birthCity: 34 },
+      { title: 'Complete detail view', project: 'Todo List',  context: 'Coding',
+        Estimated: '2', priority: '1', created: '', completed: false },
+      { title: 'Modify dashboard charts', project: 'Todo List',  context: 'Research',
+        Estimated: '3', priority: '1', created: '', completed: false },
+      { title: 'Extract components', project: 'Todo List',  context: 'Refactor',
+        Estimated: '1', priority: '3', created: '', completed: true },
+      { title: 'Fix emacs debugging tool', project: 'Dev Tool',  context: 'Research',
+        Estimated: '3', priority: '2', created: '', completed: false },
+      { title: 'Use detail panel instead of detail view?', project: 'Todo List',  context: 'Coding',
+        Estimated: '2', priority: '2', created: '', completed: false },
+
     ],
   });
 
