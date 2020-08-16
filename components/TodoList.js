@@ -65,7 +65,7 @@ export default function TodoList() {
       {
         icon: 'edit',
         tooltip: 'Edit User',
-        onClick: (event, rowData) => alert("You saved " + rowData.name)
+        onClick: (event, rowData) => window.location.href = "/list/" + rowData.name,
       },
       rowData => ({
         icon: 'delete',

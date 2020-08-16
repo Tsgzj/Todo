@@ -25,8 +25,8 @@ function Copyright() {
             <Typography variant="body2" color="textSecondary" align="center">
             {'Copyright © '}
             <Link color="inherit" href="https://material-ui.com/">
-            Your Website
-        </Link>{' '}
+            Tsgzj
+        </Link>{'https://tsgzj.me'}
         {new Date().getFullYear()}
         {'.'}
         </Typography>
@@ -63,11 +63,6 @@ export default function Main(props) {
             <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
             {props.title}
         </Typography>
-            <IconButton color="inherit">
-            <Badge badgeContent={4} color="secondary">
-            <NotificationsIcon />
-            </Badge>
-            </IconButton>
             </Toolbar>
             </AppBar>
             <Drawer

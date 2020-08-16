@@ -1,5 +1,7 @@
 import React from 'react';
 import ListIcon from '@material-ui/icons/List';
+import InfoIcon from '@material-ui/icons/Info';
+import ViewWeekIcon from '@material-ui/icons/ViewWeek';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -23,13 +25,13 @@ export const mainListItems = (
     </ListItem>
     <ListItem button >
     <ListItemIcon>
-    <ListIcon />
+    <ViewWeekIcon />
     </ListItemIcon>
     <ListItemText primary="Perspectives" />
     </ListItem>
     <ListItem button>
     <ListItemIcon>
-    <ListIcon />
+    <InfoIcon />
     </ListItemIcon>
     <ListItemText primary="About" />
     </ListItem>
