@@ -27,6 +27,7 @@ function Copyright() {
             <Link color="inherit" href="https://tsgzj.me">
             Tsgzj
         </Link>
+            {' '}
         {new Date().getFullYear()}
         {'.'}
         </Typography>
