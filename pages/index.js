@@ -4,7 +4,6 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Chart from './../components/LineChart';
 import CompletedChart from './../components/PieChart';
-import Deposits from './../components/Deposits';
 import Main from './../components/Main';
 import { useStyles } from './../components/styles';
 
